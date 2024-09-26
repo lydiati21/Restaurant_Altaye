@@ -30,12 +30,12 @@
 .app__navbar-links {
   flex: 1;
   display: flex;
-  margin-left: 200px;
+  margin-left: 150px;
   align-items: center;
   list-style: none;
 }
 .app__navbar-links li {
-  margin: 0 2.5rem;
+  margin: 0 0.5rem;
   cursor: pointer;
 }
 .app__navbar-links li:hover {
@@ -128,6 +128,32 @@
 .app__navbar-smallscreen_links li:hover {
   color: var(--color-white);
 }
+/* new css to handle the navbar font size */
+
+.app__navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem; 
+  padding: 1rem; /* Adjust navbar padding as needed */
+}
+
+.p__opensans {
+  font-family: 'Open Sans', sans-serif; /* Ensure you have this font */
+  font-size: 5rem; /* Increase font size here */
+  font-weight: bold;
+  color: #fff; /* Adjust color as needed */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.p__opensans a {
+  color: inherit; /* Make link color inherit from the parent */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.p__opensans a:hover {
+  color: #f39c12; /* Change color on hover */
+}
+/* end of the font size */
 
 @media screen and (min-width: 2000px) {
   .app__navbar-logo img {
@@ -156,5 +182,11 @@
 
   .app__navbar-logo img {
       width: 110px;
+  }
+}
+/* new */
+@media (max-width: 768px) {
+  .p__opensans {
+    font-size: 1.2rem; /* Smaller font size for mobile */
   }
 }
