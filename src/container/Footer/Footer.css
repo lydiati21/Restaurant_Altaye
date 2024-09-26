@@ -1,0 +1,151 @@
+.app__footer {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  background: var(--color-black);
+  padding-top: 0;
+}
+
+.app__footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-top: 5rem;
+  padding: 0 2rem;
+}
+
+.app__footer-links_contact,
+.app__footer-links_logo,
+.app__footer-links_work {
+  flex: 1;
+  margin: 1rem;
+  text-align: center;
+}
+
+.app__footer-links-logo img:first-child {
+  width: 210px;
+  margin-bottom: 0.75rem;
+}
+
+.app__footer-links_work p:nth-child(2n + 1) {
+  margin-bottom: 1rem;
+}
+
+.app__footer-links_icons {
+  margin-top: 0.5rem;
+}
+
+.app__footer-links_icons svg {
+  color: var(--color-white);
+  margin: 0.5rem;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.app__footer-links_icons svg:hover {
+  color: var(--color- golden);
+}
+/* new */
+.app__footer-links_logo {
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding for spacing */
+  background-color: #2c3e50; /* Dark background color for the footer */
+  color: white; /* White text color */
+}
+
+.app__footer-links_logo img {
+  max-width: 100px; /* Limit logo size */
+  margin-bottom: 10px; /* Space below the logo */
+}
+
+.app__footer-links_logo img {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+
+.app__footer-links_logo:hover img {
+  transform: scale(1.1); /* Scale up the image slightly on hover */
+}
+
+.p__opensans {
+  font-style: italic; /* Italic text for the quote */
+  margin: 10px 0; /* Vertical margin for spacing */
+  max-width: 300px; /* Limit quote width */
+}
+
+.app__footer-links_icons {
+  display: flex; /* Flexbox for icon alignment */
+  gap: 15px; /* Space between icons */
+  margin-top: 15px; /* Space above icons */
+}
+
+.app__footer-links_icons svg {
+  width: 24px; /* Icon size */
+  height: 24px; /* Icon size */
+  color: white; /* Icon color */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.app__footer-links_icons svg:hover {
+  transform: scale(1.2); /* Scale up icon on hover */
+  color: #f1c40f; /* Change icon color to golden on hover */
+}
+/* end */
+.app__footer-headtext {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-size: 32px;
+  line-height: 41.6px;
+  margin-bottom: 1rem;
+}
+
+.footer__copyright {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__footer-headtext {
+    font-size: 51px;
+    line-height: 61px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .app__footer-links {
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .app__footer-links_contact,
+  .app__footer-links_logo,
+  .app__footer-links_work {
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 650px) {
+  .app__footer {
+    padding: 0 0 2rem 0;
+  }
+}
+.app__footer {
+  padding: 0 0 2rem 0;
+}
+@media screen and (min-width: 350px) {
+  .app__footer-links_logo img:first-child {
+    width: 80%;
+  }
+}
