@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-black);
+  background: var(--color-golden);
   padding: 1rem 2rem;
 }
 .app__navbar-logo {
@@ -39,7 +39,7 @@
   cursor: pointer;
 }
 .app__navbar-links li:hover {
-  color: #00aaff; 
+  /* color: #00aaff;  */
 }
 
 /* new  */
@@ -49,7 +49,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--color-black);
+  /* background: var(--color-black); */
 
   padding: 1rem 2rem;
 }
@@ -60,10 +60,10 @@
   align-items: center;
 }
 
-.app__navbar-logo img {
+/* .app__navbar-logo img {
   width: 250px;
   height: 150px;
-}
+} */
 
 .app__navbar-links {
   flex: 1;
@@ -77,11 +77,13 @@
 .app__navbar-links li {
   margin: 0 2rem;
   cursor: pointer;
+    color: var(--color-black);
+
 }
 
 .app__navbar-links li:hover {
-  /* color: var(--color-grey); */
-  color:darkgray;
+  /* color: var(--color-black); */
+  /* color:darkgray; */
 }
 
 
@@ -141,7 +143,7 @@
   font-family: 'Open Sans', sans-serif; /* Ensure you have this font */
   font-size: 5rem; /* Increase font size here */
   font-weight: bold;
-  color: #fff; /* Adjust color as needed */
+  color: black; /* Adjust color as needed */
   text-decoration: none; /* Remove underline from links */
 }
 
@@ -151,7 +153,7 @@
 }
 
 .p__opensans a:hover {
-  color: #f39c12; /* Change color on hover */
+  color: #f39c12;
 }
 /* end of the font size */
 
@@ -190,3 +192,43 @@
     font-size: 1.2rem; /* Smaller font size for mobile */
   }
 }
+.app__navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* background-color: black; */
+  height: 70px;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+}
+.app__navbar-logo img {
+  width: 90px;
+  /* margin-top: 1rem; */
+  height: 60px;
+}
+
+/* lidu css */
+
+.app__navbar-logo {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+/* margin-left: 100px;    */
+height: 3.5rem;
+border-radius: 100%;
+/* overflow: hidden; */
+width: 180px;
+}
+.app__navbar-logo img {
+transition: transform 0.3s ease-in-out;
+width: 150px;
+height: 68px;
+}
+ .app__navbar-logo img:hover {
+   cursor: pointer;
+   transition: transform 0.3s ease-in-out;
+   transform: scale(1.1);
+ }     

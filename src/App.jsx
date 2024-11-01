@@ -1,5 +1,5 @@
-import React from "react";
-
+import { useState, useEffect } from "react";
+import { RingLoader } from "react-spinners";
 import {
   AboutUs,
   Chef,
@@ -14,19 +14,45 @@ import {
 import { Navbar } from "./components";
 import "./App.css";
 
-const App = () => (
-  <div>
-    <Navbar />
-    <Header />
-    <AboutUs />
-    <SpecialMenu />
-    <Chef />
-    <Intro />
-    <Laurels />
-    <Gallery />
-    <FindUs />
-    <Footer />
-  </div>
-);
+function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div>
+      {isLoading ? (
+        <div className="loader-container">
+          <RingLoader
+            color={"#FFCC00"}
+            loading={isLoading}
+            size={100}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      ) : (
+        <div>
+          <Navbar />
+          <Header />
+          <AboutUs />
+          <SpecialMenu />
+          <Chef />
+          <Intro />
+          <Laurels />
+          <Gallery />
+          <FindUs />
+          <Footer />
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default App;

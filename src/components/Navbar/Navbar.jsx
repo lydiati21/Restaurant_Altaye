@@ -5,7 +5,6 @@ import images from "../../constants/images";
 
 import "./Navbar.css";
 
-import "./Navbar.css";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (

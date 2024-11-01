@@ -1,0 +1,13 @@
+.see-more-less {
+  display: block;
+  margin-top: 10px;
+  background-color: var(--color-golden);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.see-more-less:hover {
+  background-color: var(--color-golden);
+}

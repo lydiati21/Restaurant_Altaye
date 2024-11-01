@@ -35,8 +35,8 @@
 }
 
 .app__specialMenu-menu_img {
-  width: 410px;
-  margin: 10rem 2rem;
+  width: 310px;
+  margin: 10rem 6rem;
 }
 
 .app__specialMenu-menu_img img {
@@ -90,4 +90,19 @@
       font-size: 35px;
       line-height: 48.5px;
   }
+}
+
+/* new */
+
+.custom__button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.custom__button:hover {
+  background-color: #0056b3;
 }
